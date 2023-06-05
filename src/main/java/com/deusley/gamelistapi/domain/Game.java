@@ -1,10 +1,7 @@
 package com.deusley.gamelistapi.domain;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 
@@ -19,14 +16,16 @@ import lombok.*;
 public class Game {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    @Column(name = "game_year")
-    private Integer year;
+    private Integer GameYear;
     private String genre;
     private String platform;
+    private Double Score;
     private String imgUrl;
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
 }
