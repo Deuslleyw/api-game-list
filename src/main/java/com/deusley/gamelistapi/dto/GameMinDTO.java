@@ -1,4 +1,4 @@
-package com.deusley.gamelistapi.domain.dto;
+package com.deusley.gamelistapi.dto;
 
 import lombok.*;
 
@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 public class GameMinDTO {
 
-    private Long id;
+    private String id;
     private String title;
     private Integer GameYear;
     private String imgUrl;

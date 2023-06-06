@@ -1,7 +1,7 @@
 package com.deusley.gamelistapi.mapper;
 
 import com.deusley.gamelistapi.domain.Game;
-import com.deusley.gamelistapi.domain.dto.GameMinDTO;
+import com.deusley.gamelistapi.dto.GameMinDTO;
 
 import java.util.UUID;
 
