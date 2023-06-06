@@ -16,8 +16,7 @@ import lombok.*;
 public class Game {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
     private String title;
     private Integer GameYear;
     private String genre;
