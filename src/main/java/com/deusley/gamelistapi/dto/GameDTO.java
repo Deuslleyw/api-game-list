@@ -2,17 +2,20 @@ package com.deusley.gamelistapi.dto;
 
 import lombok.*;
 
-@ToString
-@Builder
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class GameMinDTO {
+public class GameDTO {
 
     private String id;
     private String title;
     private Integer GameYear;
+    private String genre;
+    private String platform;
+    private Double Score;
     private String imgUrl;
     private String shortDescription;
+    private String longDescription;
 
 }
