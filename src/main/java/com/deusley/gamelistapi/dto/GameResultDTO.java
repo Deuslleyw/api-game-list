@@ -15,10 +15,10 @@ public class GameResultDTO {
     public GameResultDTO(){}
 
     public GameResultDTO(Game entity) {
-        this.id = entity.getId();
-        this.title = entity.getTitle();
-        this.GameYear = entity.getGameYear();
-        this.imgUrl = entity.getImgUrl();
-        this.shortDescription = entity.getShortDescription();
+        id = entity.getId();
+        title = entity.getTitle();
+        GameYear = entity.getGameYear();
+        imgUrl = entity.getImgUrl();
+        shortDescription = entity.getShortDescription();
     }
 }

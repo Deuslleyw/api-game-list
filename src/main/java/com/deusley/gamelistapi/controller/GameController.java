@@ -1,7 +1,9 @@
 package com.deusley.gamelistapi.controller;
 
 import com.deusley.gamelistapi.domain.Game;
+import com.deusley.gamelistapi.dto.GameDTO;
 import com.deusley.gamelistapi.dto.GameResultDTO;
+import com.deusley.gamelistapi.mapper.GameMapper;
 import com.deusley.gamelistapi.service.GameService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -21,16 +23,11 @@ public class GameController {
     @Autowired
     private GameService service;
 
-    @Autowired
-    private ModelMapper mapp;
-
     @GetMapping
-    public ResponseEntity<List<Game>> findAll() {
+    public ResponseEntity<List<GameResultDTO>> findAll() {
+        List<GameResultDTO> result = service.findAll();
+        return ResponseEntity.ok().body(result);
 
-        var gameList = service.findAll();
-        var mapper = mapp.map(gameList, GameResultDTO.class);
-
-   return ResponseEntity.ok().body((List<Game>) mapper);
 
     }
 }
