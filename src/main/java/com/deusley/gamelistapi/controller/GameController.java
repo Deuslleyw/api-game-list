@@ -1,12 +1,9 @@
 package com.deusley.gamelistapi.controller;
 
-import com.deusley.gamelistapi.domain.Game;
-import com.deusley.gamelistapi.dto.GameDTO;
+
 import com.deusley.gamelistapi.dto.GameResultDTO;
-import com.deusley.gamelistapi.mapper.GameMapper;
 import com.deusley.gamelistapi.service.GameService;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,11 +20,10 @@ public class GameController {
     @Autowired
     private GameService service;
 
-    @GetMapping
-    public ResponseEntity<List<GameResultDTO>> findAll() {
-        List<GameResultDTO> result = service.findAll();
+   @GetMapping
+   public ResponseEntity<List<GameResultDTO>> findAll() {
+       List<GameResultDTO> result = service.findAll();
         return ResponseEntity.ok().body(result);
-
 
     }
 }

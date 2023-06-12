@@ -2,6 +2,8 @@ package com.deusley.gamelistapi.mapper;
 
 import com.deusley.gamelistapi.domain.Game;
 import com.deusley.gamelistapi.dto.GameDTO;
+import com.deusley.gamelistapi.dto.GameResultDTO;
+
 import java.util.UUID;
 
 public class GameMapper {
@@ -21,6 +23,3 @@ public class GameMapper {
                 .build();
     }
 }
-
-
-

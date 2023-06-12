@@ -1,9 +1,13 @@
 package com.deusley.gamelistapi.dto;
 
 import com.deusley.gamelistapi.domain.Game;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
 @Getter
+@NoArgsConstructor
 public class GameResultDTO {
 
     private String id;
@@ -12,7 +16,6 @@ public class GameResultDTO {
     private String imgUrl;
     private String shortDescription;
 
-    public GameResultDTO(){}
 
     public GameResultDTO(Game entity) {
         id = entity.getId();
