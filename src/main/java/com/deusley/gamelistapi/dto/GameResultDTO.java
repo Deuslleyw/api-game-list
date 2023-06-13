@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GameResultDTO {
 
-    private String id;
+    private Long id;
     private String title;
     private Integer GameYear;
     private String imgUrl;

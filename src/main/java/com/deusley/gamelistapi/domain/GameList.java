@@ -15,7 +15,6 @@ import lombok.*;
 @Table(name = "tb_game_list")
 public class GameList {
 
-
     @Id
     private String id;
     private String name;

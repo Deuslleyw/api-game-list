@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 public class GameDTO {
 
-    private String id;
+    private Long id;
     private String title;
     private Integer GameYear;
     private String genre;
