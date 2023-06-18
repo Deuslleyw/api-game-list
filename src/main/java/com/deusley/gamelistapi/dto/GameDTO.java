@@ -2,6 +2,7 @@ package com.deusley.gamelistapi.dto;
 
 import lombok.*;
 
+@Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor

@@ -7,6 +7,7 @@ import com.deusley.gamelistapi.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -20,5 +21,11 @@ public class GameServiceImpl implements GameService {
     public List<GameResultDTO> findAll() {
         List<Game> result = rep.findAll();
         return result.stream().map(GameResultDTO::new).toList();
+    }
+
+    @Override
+    public Game findById(Long id) {
+        Optional<Game> obj = rep.findById(id);
+        return obj.orElseThrow();
     }
 }
