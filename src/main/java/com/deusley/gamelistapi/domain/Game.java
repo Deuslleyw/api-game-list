@@ -1,10 +1,7 @@
 package com.deusley.gamelistapi.domain;
 
-
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.UuidGenerator;
-
 
 @Builder
 @AllArgsConstructor

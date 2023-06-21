@@ -1,6 +1,5 @@
 package com.deusley.gamelistapi.controller;
 
-
 import com.deusley.gamelistapi.dto.GameDTO;
 import com.deusley.gamelistapi.dto.GameResultDTO;
 import com.deusley.gamelistapi.service.GameService;
