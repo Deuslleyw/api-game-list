@@ -39,5 +39,4 @@ public class GameController {
        return ResponseEntity.ok().body(mapperResponse);
 
     }
-
 }
