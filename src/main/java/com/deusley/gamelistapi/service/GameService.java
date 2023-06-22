@@ -8,6 +8,8 @@ public interface GameService {
 
     public List<GameResultDTO> findAll();
 
+    public List<GameResultDTO> searchByList( Long listId);
+
     Game findById (Long id);
 
 

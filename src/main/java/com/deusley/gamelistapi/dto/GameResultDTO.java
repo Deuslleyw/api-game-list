@@ -1,6 +1,7 @@
 package com.deusley.gamelistapi.dto;
 
 import com.deusley.gamelistapi.domain.Game;
+import com.deusley.gamelistapi.projections.GameProjection;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -23,5 +24,13 @@ public class GameResultDTO {
         GameYear = entity.getGameYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+    public GameResultDTO(GameProjection projection){
+        id = projection.getId();
+        title = projection.getTitle();
+        GameYear = projection.getGameYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
+
     }
 }
