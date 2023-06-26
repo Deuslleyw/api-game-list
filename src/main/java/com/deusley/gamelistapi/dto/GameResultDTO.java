@@ -2,7 +2,6 @@ package com.deusley.gamelistapi.dto;
 
 import com.deusley.gamelistapi.domain.Game;
 import com.deusley.gamelistapi.projections.GameProjection;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,7 +9,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
+
 public class GameResultDTO {
 
     private Long id;

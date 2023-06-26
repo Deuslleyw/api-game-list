@@ -2,6 +2,7 @@ package com.deusley.gamelistapi.service.impl;
 
 import com.deusley.gamelistapi.domain.Game;
 import com.deusley.gamelistapi.dto.GameResultDTO;
+import com.deusley.gamelistapi.exceptions.ObjectNotFoundException;
 import com.deusley.gamelistapi.projections.GameProjection;
 import com.deusley.gamelistapi.repository.GameRepository;
 import com.deusley.gamelistapi.service.GameService;
@@ -33,6 +34,6 @@ public class GameServiceImpl implements GameService {
     @Override
     public Game findById(Long id) {
         Optional<Game> obj = rep.findById(id);
-        return obj.orElseThrow();
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Não Encontrado por esse Id"));
     }
 }
