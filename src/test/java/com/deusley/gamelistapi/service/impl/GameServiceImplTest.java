@@ -79,6 +79,12 @@ class GameServiceImplTest {
         List<GameResultDTO> response = gameService.searchByList(anyLong());
 
         assertNotNull(response);
+        assertEquals(ID, response.get(INDEX).getId());
+        assertEquals(TITULO, response.get(INDEX).getTitle());
+        assertEquals(GAME_YEAR, response.get(INDEX).getGameYear());
+        assertEquals(IMG_URL, response.get(INDEX).getImgUrl());
+        assertEquals(SHORT_DESCRIPTION, response.get(INDEX).getShortDescription());
+
 
     }
 
@@ -108,27 +114,27 @@ class GameServiceImplTest {
         projectionList = Collections.singletonList(new GameProjection() {
             @Override
             public Long getId() {
-                return null;
+                return ID;
             }
 
             @Override
             public String getTitle() {
-                return null;
+                return TITULO;
             }
 
             @Override
             public Integer getGameYear() {
-                return null;
+                return GAME_YEAR;
             }
 
             @Override
             public String getImgUrl() {
-                return null;
+                return IMG_URL;
             }
 
             @Override
             public String getShortDescription() {
-                return null;
+                return SHORT_DESCRIPTION;
             }
 
             @Override
