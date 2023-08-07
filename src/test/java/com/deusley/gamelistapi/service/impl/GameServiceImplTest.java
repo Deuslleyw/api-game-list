@@ -46,6 +46,7 @@ class GameServiceImplTest {
 
     @Mock
     private ModelMapper mapper;
+
     @Mock
     private GameRepository repository;
 
