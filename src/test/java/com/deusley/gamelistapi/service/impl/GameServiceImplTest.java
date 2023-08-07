@@ -84,8 +84,6 @@ class GameServiceImplTest {
         assertEquals(GAME_YEAR, response.get(INDEX).getGameYear());
         assertEquals(IMG_URL, response.get(INDEX).getImgUrl());
         assertEquals(SHORT_DESCRIPTION, response.get(INDEX).getShortDescription());
-
-
     }
 
     @Test
