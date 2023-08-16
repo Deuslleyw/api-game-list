@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping(value = "api/v1/games")
 public class GameController {
 
